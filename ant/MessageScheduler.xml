@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project MessageScheduler">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="${dir.buildfile}/../.."/>
+    <property name="dir.jarfile" value="${dir.workspace}/MessageScheduler/build"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/MessageScheduler.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="water.messagescheduler.Main"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="${dir.workspace}/MessageScheduler/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/MessageScheduler/libs/mysql-connector-java-5.1.44-bin.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/MessageScheduler/libs/log4j-api-2.9.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/MessageScheduler/libs/log4j-core-2.9.0.jar"/>
+        </jar>
+    </target>
+</project>

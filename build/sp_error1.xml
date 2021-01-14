@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<MessagePacket is_button="1" otkogo="1" type_form="RingFromClients">
+<id>1415184</id>
+<Message>Звонит кто-то</Message>
+<Subject>Звонит кто-то раз-два-три</Subject>
+<WhereParams>8</WhereParams>
+</MessagePacket>

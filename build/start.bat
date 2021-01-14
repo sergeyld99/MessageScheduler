@@ -1,0 +1,1 @@
+java -Dfile.encoding=UTF-8 -Dlog4j.configurationFile=file:////D:/MyPrograms/EclipseProjects/MessageScheduler/build/log4j2.xml -jar ./MessageScheduler.jar 
